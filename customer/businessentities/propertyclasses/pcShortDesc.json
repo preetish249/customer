@@ -1,0 +1,26 @@
+{
+  "name": "pcShortDesc",
+  "type": "BIZATRPROPCLASS",
+  "childs": [],
+  "dataType": "STRING",
+  "minLen": "",
+  "maxLen": "",
+  "strValidationType": "NONE",
+  "pattern": "",
+  "lovId": "",
+  "minVal": "",
+  "maxVal": "",
+  "maxDecimals": "",
+  "minDate": "",
+  "maxDate": "",
+  "tbId": "wt_tab_038_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": ""
+}

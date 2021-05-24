@@ -1,0 +1,710 @@
+{
+  "name": "bemCustomer",
+  "desc": "",
+  "type": "XDMENTITYMAPPING",
+  "childs": [
+    {
+      "type": "XDMNODE",
+      "superName": "",
+      "name": "customerDetails",
+      "desc": "Customer Details",
+      "inherited": false,
+      "childs": [
+        {
+          "type": "XDMNODE",
+          "superName": "",
+          "name": "basicDetails",
+          "desc": "Basic Details",
+          "inherited": false,
+          "childs": [
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcLongCode",
+              "name": "custId",
+              "desc": "Id",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": "",
+                "mandatory": false
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custMast",
+                "dataStoreColId": "CUST_ID"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcDt",
+              "name": "custSince",
+              "desc": "Customer Since",
+              "inherited": false,
+              "properties": {
+                "dataType": "DATE",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": "",
+                "options": [],
+                "mandatory": false
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custMast",
+                "dataStoreColId": "CUST_SINCE"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcShortCode",
+              "name": "custStatus",
+              "desc": "Customer Status",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custMast",
+                "dataStoreColId": "CUST_STATUS"
+              }
+            }
+          ],
+          "relationType": "ONETOONE",
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreName": "CUST_MASTER",
+                "dataStoreId": "custMast",
+                "parentDataStoreId": "custMast",
+                "relationWithParent": [],
+                "propagationColumns": [
+                  {
+                    "toColumn": "CUST_NUMBER",
+                    "fromColumn": "CUST_NUMBER"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "XDMNODE",
+          "superName": "",
+          "name": "personalDetails",
+          "desc": "Personal Details",
+          "inherited": false,
+          "childs": [
+            {
+              "type": "XDMNODE",
+              "superName": "baPersonName",
+              "name": "custName",
+              "desc": "Name",
+              "inherited": false,
+              "superType": "COMPOSITEBIZATTRIBUTE",
+              "childs": [
+                {
+                  "type": "XDMELEMENT",
+                  "superName": "pcShortCode",
+                  "superType": "BIZATRPROPCLASS",
+                  "name": "personTitle",
+                  "inherited": true,
+                  "dataAttrType": "ELEMENT",
+                  "properties": {
+                    "dataType": "STRING",
+                    "minLen": "",
+                    "maxLen": "",
+                    "strValidationType": "NONE",
+                    "pattern": "",
+                    "lovId": "",
+                    "minVal": "",
+                    "maxVal": "",
+                    "maxDecimals": "",
+                    "minDate": "",
+                    "maxDate": ""
+                  },
+                  "relationType": "ONETOONE",
+                  "desc": "Salutation",
+                  "persistenceDetails": {
+                    "dataStoreId": "custPersonal",
+                    "dataStoreColId": "TITLE"
+                  }
+                },
+                {
+                  "type": "XDMELEMENT",
+                  "superName": "pcShortDesc",
+                  "superType": "BIZATRPROPCLASS",
+                  "name": "firstName",
+                  "inherited": true,
+                  "dataAttrType": "ELEMENT",
+                  "properties": {
+                    "dataType": "STRING",
+                    "minLen": "",
+                    "maxLen": "",
+                    "strValidationType": "NONE",
+                    "pattern": "",
+                    "lovId": "",
+                    "minVal": "",
+                    "maxVal": "",
+                    "maxDecimals": "",
+                    "minDate": "",
+                    "maxDate": ""
+                  },
+                  "relationType": "ONETOONE",
+                  "desc": "First Name",
+                  "persistenceDetails": {
+                    "dataStoreId": "custPersonal",
+                    "dataStoreColId": "FIRST_NAME"
+                  }
+                },
+                {
+                  "type": "XDMELEMENT",
+                  "superName": "pcShortDesc",
+                  "superType": "BIZATRPROPCLASS",
+                  "name": "middleName",
+                  "inherited": true,
+                  "dataAttrType": "ELEMENT",
+                  "properties": {
+                    "dataType": "STRING",
+                    "minLen": "",
+                    "maxLen": "",
+                    "strValidationType": "NONE",
+                    "pattern": "",
+                    "lovId": "",
+                    "minVal": "",
+                    "maxVal": "",
+                    "maxDecimals": "",
+                    "minDate": "",
+                    "maxDate": "",
+                    "mandatory": false
+                  },
+                  "relationType": "ONETOONE",
+                  "desc": "Middle Name",
+                  "persistenceDetails": {
+                    "dataStoreId": "custPersonal",
+                    "dataStoreColId": "MIDDLE_NAME"
+                  }
+                },
+                {
+                  "type": "XDMELEMENT",
+                  "superName": "pcShortDesc",
+                  "superType": "BIZATRPROPCLASS",
+                  "name": "lastName",
+                  "inherited": true,
+                  "dataAttrType": "ELEMENT",
+                  "properties": {
+                    "dataType": "STRING",
+                    "minLen": "",
+                    "maxLen": "",
+                    "strValidationType": "NONE",
+                    "pattern": "",
+                    "lovId": "",
+                    "minVal": "",
+                    "maxVal": "",
+                    "maxDecimals": "",
+                    "minDate": "",
+                    "maxDate": ""
+                  },
+                  "relationType": "ONETOONE",
+                  "desc": "Last Name",
+                  "persistenceDetails": {
+                    "dataStoreId": "custPersonal",
+                    "dataStoreColId": "LAST_NAME"
+                  }
+                }
+              ],
+              "relationType": "ONETOONE",
+              "persistenceDetails": {
+                "dataStores": [
+                  {
+                    "dataStoreName": "CUST_PERSONAL",
+                    "dataStoreId": "custPersonal",
+                    "parentDataStoreId": "custPersonal",
+                    "relationWithParent": [],
+                    "propagationColumns": []
+                  }
+                ]
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcDt",
+              "name": "custDob",
+              "desc": "DOB",
+              "inherited": false,
+              "properties": {
+                "dataType": "DATE",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": "",
+                "options": []
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custPersonal",
+                "dataStoreColId": "DOB"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcShortCode",
+              "name": "custProfession",
+              "desc": "Profession",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custPersonal",
+                "dataStoreColId": "PROFESSION"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcShortCode",
+              "name": "gender",
+              "desc": "Gender",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custPersonal",
+                "dataStoreColId": "GENDER"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcShortCode",
+              "name": "maritalStatus",
+              "desc": "Marital Status",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "superType": "BIZATRPROPCLASS",
+              "persistenceDetails": {
+                "dataStoreId": "custPersonal",
+                "dataStoreColId": "MARITAL_STATUS"
+              }
+            }
+          ],
+          "relationType": "ONETOONE",
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreName": "CUST_PERSONAL",
+                "dataStoreId": "custPersonal",
+                "parentDataStoreId": "custMast",
+                "relationWithParent": [
+                  {
+                    "column": "CUST_PK",
+                    "parentColumn": "CUST_NUMBER",
+                    "parentDataStoreId": "custMast"
+                  }
+                ],
+                "propagationColumns": [
+                  {
+                    "toColumn": "CUST_PK",
+                    "fromColumn": "CUST_NUMBER"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "XDMNODE",
+          "superName": "baAddr",
+          "name": "addresses",
+          "desc": "Address",
+          "inherited": false,
+          "superType": "COMPOSITEBIZATTRIBUTE",
+          "relationType": "ONETOMANY",
+          "childs": [
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "addrLn1",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 50,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Address Line 1",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "ADDR_LINE1"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "addrLn2",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 50,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Address Line 2",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "ADDR_LINE2"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "addrLn3",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 50,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Address Line 3",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "ADDR_LINE3"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "city",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 30,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "City",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "CITY"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "state",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 30,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "State",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "STATE"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "country",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 30,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Country",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "COUNTRY"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "",
+              "superType": "NONE",
+              "name": "zipcode",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 10,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Zip code",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "ZIP_CODE"
+              }
+            },
+            {
+              "type": "XDMELEMENT",
+              "superName": "pcShortCode",
+              "superType": "BIZATRPROPCLASS",
+              "name": "addrType",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Address Type",
+              "persistenceDetails": {
+                "dataStoreId": "custAddr",
+                "dataStoreColId": "ADDR_TYPE"
+              }
+            }
+          ],
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreName": "CUST_ADDESSES",
+                "dataStoreId": "custAddr",
+                "parentDataStoreId": "custMast",
+                "relationWithParent": [
+                  {
+                    "column": "CUST_PK",
+                    "parentColumn": "CUST_NUMBER",
+                    "parentDataStoreId": "custMast"
+                  }
+                ],
+                "propagationColumns": [
+                  {
+                    "toColumn": "CUST_PK",
+                    "fromColumn": "CUST_NUMBER"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "XDMELEMENT",
+          "superName": "pcPk",
+          "name": "custNumber",
+          "desc": "Customer Number",
+          "inherited": false,
+          "properties": {
+            "dataType": "INTEGER",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": "",
+            "options": [],
+            "mandatory": false
+          },
+          "superType": "BIZATRPROPCLASS",
+          "persistenceDetails": {
+            "dataStoreId": "custMast",
+            "dataStoreColId": "CUST_NUMBER"
+          }
+        },
+        {
+          "type": "XDMELEMENT",
+          "superName": "",
+          "name": "elm1",
+          "desc": "NewSimpleAttribute",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": "",
+            "key": true,
+            "mandatory": true
+          },
+          "persistenceDetails": {}
+        }
+      ],
+      "relationType": "ONETOONE",
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreName": "CUST_MASTER",
+            "dataStoreId": "custMast",
+            "parentDataStoreId": "custMast",
+            "relationWithParent": [
+              {
+                "column": "CUST_NUMBER",
+                "parentColumn": "CUST_NUMBER",
+                "parentDataStoreId": "custMast"
+              }
+            ],
+            "propagationColumns": []
+          }
+        ]
+      }
+    }
+  ],
+  "tbId": "wt_tab_114_",
+  "dynamic": {},
+  "dstype": "LOWVOLATILE",
+  "persistenceDetails": {
+    "dataStoreId": "",
+    "dataStoreColId": ""
+  },
+  "relationType": "ONETOONE",
+  "dataStores": []
+}

@@ -1,0 +1,185 @@
+{
+  "name": "baAddr",
+  "type": "COMPOSITEBIZATTRIBUTE",
+  "childs": [
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "addrLn1",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 50,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "addrLn2",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 50,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "addrLn3",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 50,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "city",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 30,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "state",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 30,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "country",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 30,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "NONE",
+      "name": "zipcode",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 10,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "pcShortCode",
+      "superType": "BIZATRPROPCLASS",
+      "name": "addrType",
+      "inherited": true,
+      "dataAttrType": "ELEMENT",
+      "properties": {},
+      "relationType": "ONETOONE"
+    }
+  ],
+  "tbId": "wt_tab_041_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": "",
+  "dataAttrType": "NODE",
+  "superType": "NONE",
+  "superName": "",
+  "relationType": "ONETOONE",
+  "properties": {}
+}

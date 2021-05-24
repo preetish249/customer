@@ -1,0 +1,1185 @@
+{
+  "name": "Query_xelerate",
+  "desc": "Query_xelerate screen",
+  "type": "SCREEN",
+  "scrCategory": "XELERATE",
+  "entities": [
+    "beCustomer"
+  ],
+  "services": [
+    "Query"
+  ],
+  "childs": [],
+  "childsMap": {},
+  "dsgnrIdCntr": 9,
+  "header": {
+    "elmId": "header",
+    "childs": [],
+    "dsgnrId": "header"
+  },
+  "sidebar": {
+    "elmId": "sidebar",
+    "childs": [],
+    "dsgnrId": "sidebar"
+  },
+  "body": {
+    "elmId": "body",
+    "dsgnrId": "body",
+    "childs": [
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "tab",
+        "elmType": "COMPLEX",
+        "elmSubType": "TAB",
+        "dsgnrId": "Query_xelerate_000000001",
+        "tabpages": [
+          {
+            "pageFunction": "",
+            "icon": "",
+            "title": "Input",
+            "tidsgnrid": "Query_xelerate_000000002"
+          },
+          {
+            "pageFunction": "",
+            "icon": "",
+            "title": "Output",
+            "tidsgnrid": "Query_xelerate_000000055"
+          }
+        ],
+        "childs": [
+          {
+            "custAttrs": [
+              {
+                "attrName": "",
+                "attrValue": ""
+              }
+            ],
+            "elmId": "tabpage",
+            "elmType": "COMPLEX",
+            "elmSubType": "TABPAGE",
+            "dsgnrId": "Query_xelerate_000000002",
+            "pageFunction": "",
+            "icon": "",
+            "title": "Input",
+            "id": "Query_xelerate_000000002",
+            "childs": [
+              {
+                "elmId": "navbar",
+                "elmType": "COMPLEX",
+                "elmSubType": "NAVBAR",
+                "dsgnrId": "Query_xelerate_000000004",
+                "variations": "TRANSPARENT",
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000005",
+                    "gridtype": "RESPONSIVE",
+                    "responsivecolcount": 2,
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000006",
+                        "phonelandscape": "xle-sm-col2",
+                        "phoneportrait": "xle-ti-col2",
+                        "desktop": "xle-lg-col2",
+                        "tablet": "xle-md-col2",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "align": "left",
+                            "type": "h5",
+                            "value": "",
+                            "format": "Normal",
+                            "elmId": "text",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "TEXT",
+                            "dsgnrId": "Query_xelerate_000000007",
+                            "id": "headerTitle",
+                            "width": "100",
+                            "widthType": "%",
+                            "events": []
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000008",
+                        "phonelandscape": "xle-sm-col10",
+                        "phoneportrait": "xle-ti-col10",
+                        "desktop": "xle-lg-col10",
+                        "tablet": "xle-md-col10",
+                        "widescreen": "xle-xl-col8",
+                        "justifyself": "RIGHT",
+                        "elementstack": "HORIZONTAL",
+                        "childs": [
+                          {
+                            "align": "left",
+                            "elmId": "button",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "BUTTON",
+                            "dsgnrId": "Query_xelerate_000000009",
+                            "id": "querybtn",
+                            "icon": "fa fa-search",
+                            "iconposition": "RIGHT",
+                            "classes": "mr-1",
+                            "variations": "PRIMARY",
+                            "style": "round",
+                            "size": "sm",
+                            "shadow": "Y",
+                            "maxWidth": "35",
+                            "maxWidthType": "px",
+                            "events": [
+                              {
+                                "eventname": "onclick",
+                                "eventfunction": "query"
+                              }
+                            ]
+                          },
+                          {
+                            "align": "left",
+                            "elmId": "button",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "BUTTON",
+                            "dsgnrId": "Query_xelerate_000000010",
+                            "id": "newbtn",
+                            "icon": "fa fa-plus",
+                            "iconposition": "RIGHT",
+                            "classes": "mr-1",
+                            "variations": "PRIMARY",
+                            "size": "sm",
+                            "style": "round",
+                            "shadow": "Y",
+                            "maxWidth": "35",
+                            "maxWidthType": "px",
+                            "events": [
+                              {
+                                "eventname": "onclick",
+                                "eventfunction": "create"
+                              }
+                            ]
+                          },
+                          {
+                            "align": "left",
+                            "elmId": "button",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "BUTTON",
+                            "dsgnrId": "Query_xelerate_000000011",
+                            "id": "savebtn",
+                            "icon": "fa fa-save",
+                            "iconposition": "RIGHT",
+                            "classes": "mr-1",
+                            "variations": "PRIMARY",
+                            "size": "sm",
+                            "style": "round",
+                            "shadow": "Y",
+                            "maxWidth": "35",
+                            "maxWidthType": "px",
+                            "events": [
+                              {
+                                "eventname": "onclick",
+                                "eventfunction": "modify"
+                              }
+                            ]
+                          },
+                          {
+                            "align": "left",
+                            "elmId": "button",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "BUTTON",
+                            "dsgnrId": "Query_xelerate_000000012",
+                            "id": "deletebtn",
+                            "icon": "fa fa-trash",
+                            "iconposition": "RIGHT",
+                            "classes": "mr-1",
+                            "variations": "PRIMARY",
+                            "size": "sm",
+                            "style": "round",
+                            "shadow": "Y",
+                            "maxWidth": "35",
+                            "maxWidthType": "px",
+                            "events": [
+                              {
+                                "eventname": "onclick",
+                                "eventfunction": "delete"
+                              }
+                            ]
+                          },
+                          {
+                            "align": "left",
+                            "elmId": "button",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "BUTTON",
+                            "dsgnrId": "Query_xelerate_000000013",
+                            "id": "clearbtn",
+                            "icon": "fa fa-remove",
+                            "iconposition": "RIGHT",
+                            "classes": "mr-1",
+                            "variations": "PRIMARY",
+                            "size": "sm",
+                            "style": "round",
+                            "shadow": "Y",
+                            "maxWidth": "35",
+                            "maxWidthType": "px",
+                            "events": [
+                              {
+                                "eventname": "onclick",
+                                "eventfunction": "clear"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000014",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000015",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000016",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000054",
+                            "title": "Customer Number",
+                            "xpath": "Query_ip.customerDetails.custNumber"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 1
+                  }
+                ],
+                "title": "Customer Details"
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000017",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000018",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000019",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000022",
+                            "title": "Id",
+                            "xpath": "Query_ip.customerDetails.basicDetails.custId"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000020",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000023",
+                            "title": "Customer Since",
+                            "xpath": "Query_ip.customerDetails.basicDetails.custSince"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000021",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000024",
+                            "title": "Customer Status",
+                            "xpath": "Query_ip.customerDetails.basicDetails.custStatus"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 3
+                  }
+                ],
+                "title": "Basic Details"
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000025",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000026",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000027",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000041",
+                            "title": "DOB",
+                            "xpath": "Query_ip.customerDetails.personalDetails.custDob"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000028",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000042",
+                            "title": "Profession",
+                            "xpath": "Query_ip.customerDetails.personalDetails.custProfession"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000029",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000043",
+                            "title": "Gender",
+                            "xpath": "Query_ip.customerDetails.personalDetails.gender"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000030",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000044",
+                            "title": "Marital Status",
+                            "xpath": "Query_ip.customerDetails.personalDetails.maritalStatus"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 4
+                  }
+                ],
+                "title": "Personal Details"
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000031",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000032",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000033",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000037",
+                            "title": "Salutation",
+                            "xpath": "Query_ip.customerDetails.personalDetails.custName.personTitle"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000034",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000038",
+                            "title": "First Name",
+                            "xpath": "Query_ip.customerDetails.personalDetails.custName.firstName"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000035",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000039",
+                            "title": "Middle Name",
+                            "xpath": "Query_ip.customerDetails.personalDetails.custName.middleName"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000036",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000040",
+                            "title": "Last Name",
+                            "xpath": "Query_ip.customerDetails.personalDetails.custName.lastName"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 4
+                  }
+                ],
+                "title": "Name"
+              },
+              {
+                "elmId": "table",
+                "elmType": "COMPLEX",
+                "elmSubType": "TABLE",
+                "dsgnrId": "Query_xelerate_000000045",
+                "editable": "Y",
+                "multiple": "Y",
+                "selectall": "Y",
+                "search": "N",
+                "paginationtype": "full_numbers",
+                "events": [],
+                "title": "Address",
+                "childs": [
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000046",
+                    "title": "Address Line 1",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].addrLn1"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000047",
+                    "title": "Address Line 2",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].addrLn2"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000048",
+                    "title": "Address Line 3",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].addrLn3"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000049",
+                    "title": "City",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].city"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000050",
+                    "title": "State",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].state"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000051",
+                    "title": "Country",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].country"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000052",
+                    "title": "Zip code",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].zipcode"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000053",
+                    "title": "Address Type",
+                    "xpath": "Query_ip.customerDetails.addresses[recno].addrType"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "custAttrs": [
+              {
+                "attrName": "",
+                "attrValue": ""
+              }
+            ],
+            "elmId": "tabpage",
+            "elmType": "COMPLEX",
+            "elmSubType": "TABPAGE",
+            "dsgnrId": "Query_xelerate_000000055",
+            "pageFunction": "",
+            "icon": "",
+            "title": "Output",
+            "id": "Query_xelerate_000000055",
+            "childs": [
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000057",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000058",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000059",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000097",
+                            "readonly": "Y",
+                            "title": "Customer Number",
+                            "xpath": "Query_op.customerDetails.custNumber"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 1
+                  }
+                ],
+                "title": "Customer Details"
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000060",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000061",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000062",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000065",
+                            "readonly": "Y",
+                            "title": "Id",
+                            "xpath": "Query_op.customerDetails.basicDetails.custId"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000063",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000066",
+                            "readonly": "Y",
+                            "title": "Customer Since",
+                            "xpath": "Query_op.customerDetails.basicDetails.custSince"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000064",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000067",
+                            "readonly": "Y",
+                            "title": "Customer Status",
+                            "xpath": "Query_op.customerDetails.basicDetails.custStatus"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 3
+                  }
+                ],
+                "title": "Basic Details"
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000068",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000069",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000070",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000084",
+                            "readonly": "Y",
+                            "title": "DOB",
+                            "xpath": "Query_op.customerDetails.personalDetails.custDob"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000071",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000085",
+                            "readonly": "Y",
+                            "title": "Profession",
+                            "xpath": "Query_op.customerDetails.personalDetails.custProfession"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000072",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000086",
+                            "readonly": "Y",
+                            "title": "Gender",
+                            "xpath": "Query_op.customerDetails.personalDetails.gender"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000073",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000087",
+                            "readonly": "Y",
+                            "title": "Marital Status",
+                            "xpath": "Query_op.customerDetails.personalDetails.maritalStatus"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 4
+                  }
+                ],
+                "title": "Personal Details"
+              },
+              {
+                "custAttrs": [
+                  {
+                    "attrName": "",
+                    "attrValue": ""
+                  }
+                ],
+                "elmId": "form",
+                "elmType": "COMPLEX",
+                "elmSubType": "FORM",
+                "dsgnrId": "Query_xelerate_000000074",
+                "paddingBottomValue": 4,
+                "childs": [
+                  {
+                    "rows": [],
+                    "cols": [],
+                    "elmId": "grid",
+                    "elmType": "GRID",
+                    "elmSubType": "GRID",
+                    "dsgnrId": "Query_xelerate_000000075",
+                    "gridtype": "RESPONSIVE",
+                    "childs": [
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000076",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000080",
+                            "readonly": "Y",
+                            "title": "Salutation",
+                            "xpath": "Query_op.customerDetails.personalDetails.custName.personTitle"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000077",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000081",
+                            "readonly": "Y",
+                            "title": "First Name",
+                            "xpath": "Query_op.customerDetails.personalDetails.custName.firstName"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000078",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000082",
+                            "readonly": "Y",
+                            "title": "Middle Name",
+                            "xpath": "Query_op.customerDetails.personalDetails.custName.middleName"
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "cell",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "CELL",
+                        "dsgnrId": "Query_xelerate_000000079",
+                        "phonelandscape": "xle-sm-col12",
+                        "phoneportrait": "xle-ti-col12",
+                        "desktop": "xle-lg-col12",
+                        "tablet": "xle-md-col12",
+                        "widescreen": "xle-xl-col4",
+                        "childs": [
+                          {
+                            "elmId": "input",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "INPUT",
+                            "dsgnrId": "Query_xelerate_000000083",
+                            "readonly": "Y",
+                            "title": "Last Name",
+                            "xpath": "Query_op.customerDetails.personalDetails.custName.lastName"
+                          }
+                        ]
+                      }
+                    ],
+                    "responsivecolcount": 4
+                  }
+                ],
+                "title": "Name"
+              },
+              {
+                "elmId": "table",
+                "elmType": "COMPLEX",
+                "elmSubType": "TABLE",
+                "dsgnrId": "Query_xelerate_000000088",
+                "editable": "N",
+                "multiple": "Y",
+                "selectall": "Y",
+                "search": "N",
+                "paginationtype": "full_numbers",
+                "events": [],
+                "title": "Address",
+                "childs": [
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000089",
+                    "readonly": "Y",
+                    "title": "Address Line 1",
+                    "xpath": "Query_op.customerDetails.addresses[recno].addrLn1"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000090",
+                    "readonly": "Y",
+                    "title": "Address Line 2",
+                    "xpath": "Query_op.customerDetails.addresses[recno].addrLn2"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000091",
+                    "readonly": "Y",
+                    "title": "Address Line 3",
+                    "xpath": "Query_op.customerDetails.addresses[recno].addrLn3"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000092",
+                    "readonly": "Y",
+                    "title": "City",
+                    "xpath": "Query_op.customerDetails.addresses[recno].city"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000093",
+                    "readonly": "Y",
+                    "title": "State",
+                    "xpath": "Query_op.customerDetails.addresses[recno].state"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000094",
+                    "readonly": "Y",
+                    "title": "Country",
+                    "xpath": "Query_op.customerDetails.addresses[recno].country"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000095",
+                    "readonly": "Y",
+                    "title": "Zip code",
+                    "xpath": "Query_op.customerDetails.addresses[recno].zipcode"
+                  },
+                  {
+                    "elmId": "input",
+                    "elmType": "SIMPLE",
+                    "elmSubType": "INPUT",
+                    "dsgnrId": "Query_xelerate_000000096",
+                    "readonly": "Y",
+                    "title": "Address Type",
+                    "xpath": "Query_op.customerDetails.addresses[recno].addrType"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "paddingAllValue": 3
+  },
+  "footer": {
+    "elmId": "footer",
+    "childs": [],
+    "dsgnrId": "footer"
+  }
+}

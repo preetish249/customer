@@ -1,0 +1,61 @@
+{
+  "name": "CUST_PERSONAL",
+  "type": "DATASTORE",
+  "childs": [],
+  "tbId": "wt_tab_055_",
+  "dynamic": {},
+  "columns": [
+    {
+      "dataType": "INTEGER",
+      "name": "CUST_PK",
+      "pkColumn": true,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "TITLE",
+      "length": 10,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "FIRST_NAME",
+      "length": 50,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "MIDDLE_NAME",
+      "length": 50
+    },
+    {
+      "dataType": "STRING",
+      "name": "LAST_NAME",
+      "length": 50,
+      "mandatory": true
+    },
+    {
+      "dataType": "DATE",
+      "name": "DOB",
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "GENDER",
+      "length": 10,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "MARITAL_STATUS",
+      "length": 10,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "PROFESSION",
+      "length": 10
+    }
+  ],
+  "constraints": []
+}

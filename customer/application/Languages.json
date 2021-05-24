@@ -1,0 +1,10 @@
+{
+  "type": "LANGUAGES",
+  "name": "LANGUAGES",
+  "languages": [
+    {
+      "langCode": "en",
+      "langDesc": "English"
+    }
+  ]
+}

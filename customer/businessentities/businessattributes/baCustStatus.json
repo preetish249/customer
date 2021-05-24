@@ -1,0 +1,32 @@
+{
+  "name": "baCustStatus",
+  "type": "SIMPLEBIZATTRIBUTE",
+  "childs": [],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": 10,
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  },
+  "tbId": "wt_tab_044_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": "",
+  "dataAttrType": "ELEMENT",
+  "superType": "",
+  "superName": "",
+  "relationType": "ONETOONE"
+}

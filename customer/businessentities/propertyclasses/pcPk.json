@@ -1,0 +1,26 @@
+{
+  "name": "pcPk",
+  "type": "BIZATRPROPCLASS",
+  "childs": [],
+  "dataType": "INTEGER",
+  "minLen": "",
+  "maxLen": "",
+  "strValidationType": "NONE",
+  "pattern": "",
+  "lovId": "",
+  "minVal": "",
+  "maxVal": "",
+  "maxDecimals": "",
+  "minDate": "",
+  "maxDate": "",
+  "tbId": "wt_tab_035_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": ""
+}

@@ -1,0 +1,26 @@
+{
+  "name": "pcMedCode",
+  "type": "BIZATRPROPCLASS",
+  "childs": [],
+  "dataType": "BINARY",
+  "minLen": "",
+  "maxLen": "",
+  "strValidationType": "NONE",
+  "pattern": "",
+  "lovId": "",
+  "minVal": "",
+  "maxVal": "",
+  "maxDecimals": "",
+  "minDate": "",
+  "maxDate": "",
+  "tbId": "wt_tab_033_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": ""
+}

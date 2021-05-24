@@ -1,0 +1,32 @@
+{
+  "name": "baExchRate",
+  "type": "SIMPLEBIZATTRIBUTE",
+  "childs": [],
+  "properties": {
+    "dataType": "INTEGER",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  },
+  "tbId": "wt_tab_034_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": "",
+  "dataAttrType": "ELEMENT",
+  "superType": "",
+  "superName": "",
+  "relationType": "ONETOONE"
+}

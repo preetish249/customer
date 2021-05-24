@@ -1,0 +1,26 @@
+{
+  "name": "pcDt",
+  "type": "BIZATRPROPCLASS",
+  "childs": [],
+  "dataType": "DATE",
+  "minLen": "",
+  "maxLen": "",
+  "strValidationType": "NONE",
+  "pattern": "",
+  "lovId": "",
+  "minVal": "",
+  "maxVal": "",
+  "maxDecimals": "",
+  "minDate": "",
+  "maxDate": "",
+  "tbId": "wt_tab_029_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": ""
+}

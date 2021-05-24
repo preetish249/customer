@@ -1,0 +1,33 @@
+{
+  "name": "CUST_MASTER",
+  "type": "DATASTORE",
+  "childs": [],
+  "tbId": "wt_tab_042_",
+  "dynamic": {},
+  "columns": [
+    {
+      "dataType": "INTEGER",
+      "name": "CUST_NUMBER",
+      "pkColumn": true,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "CUST_ID",
+      "length": 30,
+      "mandatory": true
+    },
+    {
+      "dataType": "STRING",
+      "name": "CUST_STATUS",
+      "length": 10,
+      "mandatory": true
+    },
+    {
+      "dataType": "DATE",
+      "name": "CUST_SINCE",
+      "mandatory": true
+    }
+  ],
+  "constraints": []
+}

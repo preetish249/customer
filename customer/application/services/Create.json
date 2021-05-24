@@ -1,0 +1,9 @@
+{
+  "name": "Create",
+  "serType": "CRUD_CREATE",
+  "entity": "beCustomer",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "childs": [],
+  "childsMap": {}
+}

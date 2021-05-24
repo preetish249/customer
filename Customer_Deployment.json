@@ -1,0 +1,11 @@
+{
+  "CustomerNewTest": {
+    "name": "CustomerNewTest",
+    "uiReq": "Y",
+    "uiType": "EMBEDDED",
+    "logPath": "",
+    "jndiName": "xelerate-studio",
+    "firstScreen": "Login",
+    "lang": "en"
+  }
+}

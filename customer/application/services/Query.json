@@ -1,0 +1,9 @@
+{
+  "name": "Query",
+  "serType": "CRUD_QUERY",
+  "entity": "beCustomer",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "childs": [],
+  "childsMap": {}
+}
